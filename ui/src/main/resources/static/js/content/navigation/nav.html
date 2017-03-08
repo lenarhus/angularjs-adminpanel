@@ -1,0 +1,47 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <span><img class="img-responsive visible-lg" src="images/1f37f.png" style="max-width: 38px;float: left;margin: 5px 0 0 10px ;" /></span>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ng-href="/">Movie Buddy Controls</a>
+    </div>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse" ng-controller="navigator as nav">
+        <ul class="nav navbar-nav side-nav" ng-show="authenticated">
+            <li>
+                <a ng-href="#!/main"><i class="fa fa-tachometer"></i> Dashboard</a>
+            </li>
+            <li>
+                <a ng-href="#!/usermanager"><i class="fa fa-users"></i> Users</a>
+            </li>
+            <li>
+                <a data-toggle="collapse" data-target="#rest"><i class="fa fa-times-circle"></i> Restrictions  <i class="fa fa-caret-down"></i></a>
+                <ul id="rest" class="collapse">
+                    <li>
+                        <a ng-href="#!/restrictmovies"><i class="fa fa-film"></i> Movies</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a data-toggle="collapse" data-target="#demo"><i class="fa fa-pencil"></i> Editing  <i class="fa fa-caret-down"></i></a>
+                <ul id="demo" class="collapse">
+                    <li>
+                        <a ng-href="#!/editsessions"><i class="fa fa-ticket"></i> Sessions</a>
+                    </li>
+                    <li>
+                        <a ng-href="#!/editusers"><i class="fa fa-users"></i> Users</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a ng-click="nav.logout()"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>

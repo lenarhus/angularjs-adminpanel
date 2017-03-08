@@ -1,0 +1,32 @@
+.my-input {
+    transition:all linear 0.5s;
+    background: transparent;
+}
+.my-input.ng-invalid {
+    /*color:white;*/
+    background: red;
+}
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+.body{
+    /*background-image: image("templates/images/google-map.png");*/
+}
+.well #reload{
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translate(-25%, -50%);
+}
+.well #add{
+    float:right;
+    min-width: 80px;
+    position: absolute;
+    top: 50%;
+    left:93%;
+    transform: translate(-135%, -50%);
+}
+.input{
+    max-width: 110px;
+    min-height: 34px;
+}
